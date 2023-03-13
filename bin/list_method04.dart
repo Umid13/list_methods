@@ -9,10 +9,9 @@
 */
 List func(List list , int i){
   int  n = list[i];
-  if(i<list.length)
   list.removeAt(i);
-  return [n];
+  return list;
   }
 void main() {
-  print(func([1,2,3],3));
+  print(func([1,2,3],2));
 }
