@@ -17,7 +17,6 @@ List func(List fruits){
     }
     i++;
   }
-  list.add(s);
   return list;
 }
 void main() {
