@@ -7,13 +7,11 @@
     Returns:
         list: return answer
 */
-List func(){
-  List a = ['apple','banana','pear' ];
-  String x='grapes';
-  int n=a.length;
-  a.insert(n, x);
-  return a;
+List func(List fruits , String x){
+  int n=fruits.length;
+  fruits.insert(n, x);
+  return fruits;
 }
 void main() {
-  print(func());
+  print(func(['apple','banana','bear'],'qiwi'));
 }
