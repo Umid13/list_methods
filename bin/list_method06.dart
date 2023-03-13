@@ -7,9 +7,16 @@
         int: return answer
 */
 int func(List fruits){
-  int a=fruits.length;
-  return a;
+  int s=0;
+  int i=0;
+  while(i<fruits.length){
+    if(fruits[i]=='apple'){
+      s++;
+    }
+    i++;
+  }
+  return s;
 }
 void main() {
-  print(func(['sfse','sef','sef']));
+  print(func(['sfse','apple','sef']));
 }
