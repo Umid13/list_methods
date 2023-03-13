@@ -6,5 +6,19 @@
     Returns:
         list: return answer
 */
-
-void main() {}
+List func(List fruits){
+  int i=0;
+  int s=0;
+  List list=[];
+  while (i<fruits.length){
+    if(fruits[i]=='apple'){
+      list.add(i);
+      s++;
+    }
+    i++;
+  }
+  return list;
+}
+void main() {
+  print(func(['apple','apple','awdoawd']));
+}

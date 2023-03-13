@@ -7,5 +7,12 @@
     Returns:
         list: return answer
 */
-
-void main() {}
+List func(){
+  List a= [1,2,4,5];
+  int i=2;
+  a.removeAt(i);
+  return a;
+  }
+void main() {
+  print(func());
+}

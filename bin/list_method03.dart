@@ -7,5 +7,9 @@
     Returns:
         list: return answer
 */
-
-void main() {}
+List func(List list1 , List list2){
+  return list1+list2;
+}
+void main() {
+  print(func(['apple','banana'], ['pear','fig','pomegranate']));
+}

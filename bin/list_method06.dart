@@ -6,5 +6,10 @@
     Returns:
         int: return answer
 */
-
-void main() {}
+int func(List fruits){
+  int a=fruits.length;
+  return a;
+}
+void main() {
+  print(func(['sfse','sef','sef']));
+}

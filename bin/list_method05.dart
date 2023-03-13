@@ -9,5 +9,12 @@
     Returns:
         list: return answer
 */
-
-void main() {}
+List func(List<int> numbers1 , List<int> numbers2){
+  int n = numbers1.last;
+  numbers1.removeLast();
+  numbers2.insert(0, n);
+  return numbers1+numbers2;
+}
+void main() {
+  print(func([1,2,3,4], [7,8,9]));
+}

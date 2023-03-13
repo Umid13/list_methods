@@ -8,5 +8,12 @@
     Returns:
         list: return answer 
 */
-
-void main() {}
+List func(){
+  int i=0;
+  List a=['pomegranate','apple','pear'];
+  a.insert(i, 'Cherry');
+  return a;
+}
+void main() {
+ print(func());
+}
