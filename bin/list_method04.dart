@@ -7,12 +7,11 @@
     Returns:
         list: return answer
 */
-List func(){
-  List a= [1,2,4,5];
-  int i=2;
-  a.removeAt(i);
-  return a;
+List func(List list , int i){
+  int  n = list[i];
+  list.removeAt(i);
+  return [n];
   }
 void main() {
-  print(func());
+  print(func([1,2,3],2));
 }
