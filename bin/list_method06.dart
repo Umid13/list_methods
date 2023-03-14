@@ -6,21 +6,17 @@
     Returns:
         int: return answer
 */
-List func( List fruits ){
-  var list2 = [];
-  var list1 = [];
-  int s = 0;
-  int i = 0;
-  while ( i < fruits.length ){
-    if ( fruits[i] == 'apple'){
-      list2.add(i);
+int func(List fruits){
+  int s=0;
+  int i=0;
+  while(i<fruits.length){
+    if(fruits[i]=='apple'){
       s++;
     }
     i++;
   }
-  list1.add(s);
-  return list1 + list2;
+  return s;
 }
-void main(){
-  print(func( ["apple", "apple", "apple", "apple", "kiwi"] ));
+void main() {
+  print(func(['sfse','apple','sef']));
 }
