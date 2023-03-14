@@ -9,16 +9,18 @@
 List func(List fruits){
   int i=0;
   int s=0;
-  List list=[];
-  while (i<fruits.length){
+  List list1=[];
+  List list2=[];
+  while(i<fruits.length){
     if(fruits[i]=='apple'){
-      list.add(i);
+      list2.add(i);
       s++;
     }
     i++;
   }
-  return list;
+  list1.add(s);
+  return list1+list2;
 }
-void main() {
-  print(func(['apple','apple','awdoawd']));
+void main(){
+  print(func(['apple','apple','apple','apple','kiwi']));
 }
